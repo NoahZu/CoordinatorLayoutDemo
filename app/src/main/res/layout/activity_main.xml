@@ -11,7 +11,7 @@
         android:id="@+id/btn_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Header跟随RecyclerView动"
+        android:text="悬浮Toolbar"
         android:layout_marginTop="100dp"
         android:onClick="onClick"/>
     <Button
@@ -26,6 +26,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="滑动隐藏一个元素"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一个固定，头部扩展"
         android:onClick="onClick"/>
 
 
