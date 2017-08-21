@@ -33,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_6:
                 startActivity(new Intent(MainActivity.this,Test6Activity.class));
                 break;
+            case R.id.btn_7:
+                showDialog();
+                break;
+            case R.id.btn_8:
+                startActivity(new Intent(MainActivity.this,Test7Activity.class));
+                break;
         }
+    }
+
+    private void showDialog() {
+        new BindPhoneDialogFragment().show(getSupportFragmentManager(),"bind");
     }
 }

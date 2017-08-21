@@ -1,48 +1,73 @@
 package com.example.zujinhao.test;
 
-import android.graphics.Color;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.annotation.NonNull;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
+import android.util.Log;
+import android.view.View;
+import android.webkit.WebView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Test2Activity extends AppCompatActivity {
-    private RecyclerView recyclerView;
     private Toolbar toolbar;
-    private CollapsingToolbarLayout collapsingToolbarLayout;
+    private WebView webView;
+    private AppBarLayout appBarLayout;
+    CollapsingToolbarLayout mCollapsingToolbarLayout;
+    private TextView titleText;
+    private ImageView imageView;
+
+    private AppbarLayoutForbidOpenBehavior appbarLayoutForbidOpenBehavior;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        webView = (WebView) findViewById(R.id.wv_introduce);
+        appBarLayout = (AppBarLayout) findViewById(R.id.app_bar_layout);
+        mCollapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        titleText = (TextView) findViewById(R.id.tv_title);
+        imageView = (ImageView) findViewById(R.id.iv_background);
 
-        collapsingToolbarLayout.setTitle("zheshi tool bar");
+        webView.loadUrl("http://noahzu.github.io/");
+        appbarLayoutForbidOpenBehavior = new AppbarLayoutForbidOpenBehavior();
+
+
         setSupportActionBar(toolbar);
-        recyclerView = (RecyclerView) findViewById(R.id.rvToDoList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new RecyclerView.Adapter() {
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                return new MyViewHolder(LayoutInflater.from(Test2Activity.this).inflate(R.layout.item_rv,parent,false));
-            }
+        mCollapsingToolbarLayout.setTitle("关于");
 
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @Override
-            public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-            }
-
-            @Override
-            public int getItemCount() {
-                return 20;
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                if (verticalOffset == 0) {
+                    titleText.setVisibility(View.GONE);
+                    toolbar.setTitle("");
+                } else if (Math.abs(verticalOffset) >= appBarLayout.getTotalScrollRange()) {
+                    titleText.setVisibility(View.VISIBLE);
+                }
             }
         });
+
+
+        appBarLayout.post(new Runnable() {
+            @Override
+            public void run() {
+                CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) appBarLayout.getLayoutParams();
+                params.setBehavior(appbarLayoutForbidOpenBehavior);
+                appbarLayoutForbidOpenBehavior.setCanOpen(true);
+                appBarLayout.setExpanded(true,false);
+            }
+        });
+
     }
+
+
+
 
 
 

@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ExpendingingToolbarTitleStyle"
+        parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CollapsingToolbarTitleStyle"
+        parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
 </resources>

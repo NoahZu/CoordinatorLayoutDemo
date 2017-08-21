@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="悬浮Toolbar"
+        android:textAllCaps="false"
         android:layout_marginTop="100dp"
         android:onClick="onClick"/>
     <Button
@@ -26,24 +27,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="滑动隐藏一个元素"
+        android:textAllCaps="false"
         android:onClick="onClick"/>
     <Button
         android:id="@+id/btn_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="一个固定，头部扩展"
+        android:textAllCaps="false"
         android:onClick="onClick"/>
     <Button
         android:id="@+id/btn_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SnackBar"
+        android:textAllCaps="false"
         android:onClick="onClick"/>
     <Button
         android:id="@+id/btn_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bottom Sheets"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DialogFragment"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仿快手画礼物"
+        android:textAllCaps="false"
         android:onClick="onClick"/>
 
 
