@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.zujinhao.test.Test7Activity">
+    tools:context="com.example.zujinhao.test.activity.Test7Activity">
 
     <Button
         android:id="@+id/btn_clear"
@@ -13,8 +13,16 @@
         android:text="清除"
         android:onClick="onClick"
         />
+    <Button
+        android:id="@+id/btn_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移动"
+        android:onClick="onClick"
+        android:layout_centerInParent="true"
+        />
 
-    <com.example.zujinhao.test.DrawGiftView
+    <com.example.zujinhao.test.widget.DrawGiftView
         android:id="@+id/draw_gift_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

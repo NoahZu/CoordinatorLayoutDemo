@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.zujinhao.test.Test5Activity">
+    tools:context="com.example.zujinhao.test.activity.Test5Activity">
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/main_content"

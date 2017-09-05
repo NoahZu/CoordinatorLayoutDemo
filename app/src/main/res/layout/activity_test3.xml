@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.zujinhao.test.Test3Activity">
+    tools:context="com.example.zujinhao.test.activity.Test3Activity">
 
     <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,7 +26,7 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_scrollFlags="scroll|enterAlways" />
 
-            <com.example.zujinhao.test.HeaderView
+            <com.example.zujinhao.test.widget.HeaderView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

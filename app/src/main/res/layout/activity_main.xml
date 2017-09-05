@@ -1,74 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.zujinhao.test.MainActivity"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    tools:context="com.example.zujinhao.test.activity.MainActivity">
 
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="悬浮Toolbar"
-        android:textAllCaps="false"
-        android:layout_marginTop="100dp"
-        android:onClick="onClick"/>
-    <Button
-        android:id="@+id/btn_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="扩展头部"
-        android:onClick="onClick"/>
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btn_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="滑动隐藏一个元素"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
-    <Button
-        android:id="@+id/btn_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="一个固定，头部扩展"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
-    <Button
-        android:id="@+id/btn_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SnackBar"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
-    <Button
-        android:id="@+id/btn_6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bottom Sheets"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬浮Toolbar"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扩展头部"
+            android:onClick="onClick"/>
 
-    <Button
-        android:id="@+id/btn_7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DialogFragment"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="滑动隐藏一个元素"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一个固定，头部扩展"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SnackBar"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Sheets"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
 
-    <Button
-        android:id="@+id/btn_8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="仿快手画礼物"
-        android:textAllCaps="false"
-        android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DialogFragment"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿快手画礼物"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroller练习"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView练习"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DragLayout练习"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drawable练习"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户指示"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="直播间"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+    </LinearLayout>
 
 
 
-
-
-</LinearLayout>
+</ScrollView>

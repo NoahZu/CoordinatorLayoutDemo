@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zujinhao.test.activity.LiveRoomActivity">
+
+    <!--假装这是播放器层-->
+    <FrameLayout
+        android:id="@+id/fl_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--
+        原则1.在直播间里边是有上下层级关系的
+        原则2.根据功能划分模块，各个模块之间无关系，点击事件根据需求拦截、消息等信息由直播间下发
+    -->
+    <com.example.zujinhao.test.widget.MoveRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试2"
+            android:onClick="onClick"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:id="@+id/btn_test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试3"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/btn_test4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试4"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </com.example.zujinhao.test.widget.MoveRelativeLayout>
+
+
+</RelativeLayout>

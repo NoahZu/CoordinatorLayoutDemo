@@ -9,20 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Test1Activity" />
-        <activity android:name=".Test2Activity" />
-        <activity android:name=".Test3Activity" />
-        <activity android:name=".Test4Activity" />
-        <activity android:name=".Test5Activity" />
-        <activity android:name=".Test6Activity" />
-        <activity android:name=".Test7Activity"></activity>
+        <activity android:name=".activity.Test1Activity" />
+        <activity android:name=".activity.Test2Activity" />
+        <activity android:name=".activity.Test3Activity" />
+        <activity android:name=".activity.Test4Activity" />
+        <activity android:name=".activity.Test5Activity" />
+        <activity android:name=".activity.Test6Activity" />
+        <activity android:name=".activity.Test7Activity" />
+        <activity android:name=".activity.IndexActivity" />
+        <activity android:name=".activity.ScrollerTestActivity" />
+        <activity android:name=".activity.RecyclerViewSnapHelperTestActivity" />
+        <activity android:name=".activity.DrawLayoutActivity" />
+        <activity android:name=".activity.DrawableTestActivity" />
+        <activity android:name=".activity.UserGuideActivity" />
+        <activity android:name=".activity.LiveRoomActivity"></activity>
     </application>
 
 </manifest>
