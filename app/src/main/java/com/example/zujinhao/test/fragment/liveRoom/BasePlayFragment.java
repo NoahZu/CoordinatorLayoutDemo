@@ -8,6 +8,6 @@ import android.app.Fragment;
 
 public abstract class BasePlayFragment extends Fragment {
 
-    
+
     public abstract void onReceiveMessage(String message);
 }
