@@ -38,7 +38,7 @@ public class HorRecyclerViewAdapter extends RecyclerView.Adapter<HorRecyclerView
         TextView countText;
         public MyViewHolder(View itemView) {
             super(itemView);
-            countText = itemView.findViewById(R.id.tv_count);
+            countText = (TextView) itemView.findViewById(R.id.tv_count);
         }
     }
 

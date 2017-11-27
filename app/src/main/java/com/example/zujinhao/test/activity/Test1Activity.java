@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.adapter.BottomItemAdapter;
@@ -41,6 +42,8 @@ public class Test1Activity extends AppCompatActivity {
             }
         });
     }
+
+
 
 
 

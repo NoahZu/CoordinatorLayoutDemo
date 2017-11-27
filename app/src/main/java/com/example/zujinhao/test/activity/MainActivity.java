@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.fragment.BindPhoneDialogFragment;
+import com.example.zujinhao.test.other.UIToast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void onClick(View view){
@@ -54,11 +57,23 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_12:
                 startActivity(new Intent(MainActivity.this,DrawableTestActivity.class));
                 break;
-            case R.id.btn_13:
-                startActivity(new Intent(MainActivity.this,UserGuideActivity.class));
-                break;
             case R.id.btn_14:
                 startActivity(new Intent(MainActivity.this,LiveRoomActivity.class));
+                break;
+            case R.id.btn_toast:
+                UIToast.show(MainActivity.this,"这个Toast显示不显示呢？？？？");
+                break;
+            case R.id.btn_rotate:
+                startActivity(new Intent(MainActivity.this,RotateActivity.class));
+                break;
+            case R.id.btn_juanchi:
+                startActivity(new Intent(MainActivity.this,RulerActivity.class));
+                break;
+            case R.id.btn_anim:
+                startActivity(new Intent(MainActivity.this,AnimTextActivity.class));
+                break;
+            case R.id.btn_radio_flex_box:
+                startActivity(new Intent(MainActivity.this,RadioFlexboxLayoutActivity.class));
                 break;
         }
     }

@@ -47,7 +47,7 @@ public class CustomBottomSheetDialogFragment extends BottomSheetDialogFragment {
     }
 
     private void findView() {
-        recyclerView = rootView.findViewById(R.id.recyclerview);
+        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
     }
 
     public void setItemData(String... items) {

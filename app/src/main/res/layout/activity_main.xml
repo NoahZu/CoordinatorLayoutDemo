@@ -117,6 +117,49 @@
             android:text="直播间"
             android:textAllCaps="false"
             android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示Toast"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="翻转"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_juanchi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卷尺效果"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_right_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右滑返回"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EditText动画"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_radio_flex_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioFlexboxLayout"
+            android:textAllCaps="false"
+            android:onClick="onClick"/>
     </LinearLayout>
 
 
