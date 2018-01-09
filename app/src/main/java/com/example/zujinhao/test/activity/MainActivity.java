@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_radio_flex_box:
                 startActivity(new Intent(MainActivity.this,RadioFlexboxLayoutActivity.class));
                 break;
+            case R.id.btn_constraintLayout:
+                startActivity(new Intent(MainActivity.this,ConstraintLayoutActivity.class));
+                break;
         }
     }
 

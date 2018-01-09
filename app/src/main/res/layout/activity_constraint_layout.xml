@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zujinhao.test.activity.ConstraintLayoutActivity">
+
+
+    <TextView
+        android:id="@+id/tv_a"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="aaaaaa"
+        android:background="#44ff0000"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_b"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_a"
+        android:text="aaaaaa"
+        android:background="#44ffff00"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_c"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#0000ff"
+        app:layout_constraintTop_toBottomOf="@id/tv_b"
+        android:layout_marginTop="100dp"
+        app:layout_constraintHorizontal_bias="0.2"
+        />
+
+    <TextView
+        android:id="@+id/tv_d"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#00ffff"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

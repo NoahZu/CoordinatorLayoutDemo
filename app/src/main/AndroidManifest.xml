@@ -46,7 +46,8 @@
         <activity android:name=".activity.RotateActivity" />
         <activity android:name=".activity.RulerActivity" />
         <activity android:name=".activity.AnimTextActivity" />
-        <activity android:name=".activity.RadioFlexboxLayoutActivity"></activity>
+        <activity android:name=".activity.RadioFlexboxLayoutActivity" />
+        <activity android:name=".activity.ConstraintLayoutActivity"></activity>
     </application>
 
 </manifest>
