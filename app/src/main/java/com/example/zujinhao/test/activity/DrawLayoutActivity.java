@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.zujinhao.test.R;
 
-public class DrawLayoutActivity extends Activity {
+public class DrawLayoutActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

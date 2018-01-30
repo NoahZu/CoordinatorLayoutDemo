@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.example.zujinhao.test.R;
 
-public class DrawableTestActivity extends AppCompatActivity {
+public class DrawableTestActivity extends BaseActivity {
     private ImageView imageView;
     private Button levelAddBtn;
     private LevelListDrawable levelListDrawable;

@@ -43,7 +43,7 @@ public class BottomItemAdapter extends RecyclerView.Adapter<BottomItemAdapter.My
         public TextView textView;
         public MyViewHolder(View itemView) {
             super(itemView);
-            textView = (TextView) itemView;
+            textView = (TextView) itemView.findViewById(R.id.text_view);
         }
     }
 }

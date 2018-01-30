@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import com.example.zujinhao.test.widget.MyViewHolder;
 import com.example.zujinhao.test.R;
 
-public class Test3Activity extends AppCompatActivity {
+public class Test3Activity extends BaseActivity {
     private RecyclerView recyclerView;
     private Toolbar toolbar;
 

@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import com.example.zujinhao.test.R;
 
-public class LiveRoomActivity extends Activity {
+public class LiveRoomActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

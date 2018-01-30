@@ -1,6 +1,8 @@
 package com.example.zujinhao.test.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +12,9 @@ import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.fragment.BindPhoneDialogFragment;
 import com.example.zujinhao.test.other.UIToast;
 
-public class MainActivity extends AppCompatActivity {
+import component.noahzu.github.io.uirouter.UIRouter;
+
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,14 +43,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_6:
                 startActivity(new Intent(MainActivity.this,Test6Activity.class));
                 break;
-            case R.id.btn_7:
-                showDialog();
-                break;
             case R.id.btn_8:
                 startActivity(new Intent(MainActivity.this,Test7Activity.class));
-                break;
-            case R.id.btn_9:
-                startActivity(new Intent(MainActivity.this,ScrollerTestActivity.class));
                 break;
             case R.id.btn_10:
                 startActivity(new Intent(MainActivity.this,RecyclerViewSnapHelperTestActivity.class));
@@ -59,9 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_14:
                 startActivity(new Intent(MainActivity.this,LiveRoomActivity.class));
-                break;
-            case R.id.btn_toast:
-                UIToast.show(MainActivity.this,"这个Toast显示不显示呢？？？？");
                 break;
             case R.id.btn_rotate:
                 startActivity(new Intent(MainActivity.this,RotateActivity.class));
@@ -78,10 +73,16 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_constraintLayout:
                 startActivity(new Intent(MainActivity.this,ConstraintLayoutActivity.class));
                 break;
-        }
-    }
+            case R.id.btn_draw_pic_text_in_bitmap:
+                startActivity(new Intent(MainActivity.this,DrawPicTextInBitmapActivity.class));
+                break;
+            case R.id.btn_show_float_view:
+                startActivity(new Intent(MainActivity.this,FloatingViewActivity.class));
+                break;
+            case R.id.btn_record:
+                UIRouter.from(MainActivity.this).url("yizhibo://main/record").jump();
+                break;
 
-    private void showDialog() {
-        new BindPhoneDialogFragment().show(getSupportFragmentManager(),"bind");
+        }
     }
 }

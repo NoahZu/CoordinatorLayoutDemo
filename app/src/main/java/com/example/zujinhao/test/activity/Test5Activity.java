@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.example.zujinhao.test.R;
 
-public class Test5Activity extends Activity {
+public class Test5Activity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

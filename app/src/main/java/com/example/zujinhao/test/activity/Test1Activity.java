@@ -12,7 +12,7 @@ import android.widget.EditText;
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.adapter.BottomItemAdapter;
 
-public class Test1Activity extends AppCompatActivity {
+public class Test1Activity extends BaseActivity {
     private RecyclerView recyclerView;
     private Toolbar toolbar;
 

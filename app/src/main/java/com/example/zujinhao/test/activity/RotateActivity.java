@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.example.zujinhao.test.R;
 
-public class RotateActivity extends Activity {
+public class RotateActivity extends BaseActivity {
     ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

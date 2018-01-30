@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.zujinhao.test.R;
 
-public class IndexActivity extends AppCompatActivity {
+public class IndexActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

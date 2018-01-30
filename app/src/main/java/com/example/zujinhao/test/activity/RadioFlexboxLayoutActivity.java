@@ -14,7 +14,7 @@ import com.example.zujinhao.test.utils.UIUtil;
 import com.example.zujinhao.test.widget.RadioFlexboxLayout;
 import com.google.android.flexbox.FlexboxLayout;
 
-public class RadioFlexboxLayoutActivity extends Activity {
+public class RadioFlexboxLayoutActivity extends BaseActivity {
 
     private RadioFlexboxLayout radioFlexboxLayout;
     private Button addBtn;

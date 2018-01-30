@@ -7,7 +7,7 @@ import android.view.View;
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.widget.DrawGiftView;
 
-public class Test7Activity extends AppCompatActivity {
+public class Test7Activity extends BaseActivity {
     DrawGiftView giftView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

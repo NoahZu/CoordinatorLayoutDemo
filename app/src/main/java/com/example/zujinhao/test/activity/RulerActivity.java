@@ -7,7 +7,7 @@ import android.view.View;
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.widget.RulerView;
 
-public class RulerActivity extends Activity {
+public class RulerActivity extends BaseActivity {
     private RulerView rulerView ;
 
     @Override
@@ -18,10 +18,10 @@ public class RulerActivity extends Activity {
     }
 
     public void onClick(View view){
-        if (view.getId() == R.id.btn_add){
-            rulerView.left(5);
-        }else if (view.getId() == R.id.btn_minus){
-            rulerView.left(-3);
+        if (view.getId() == R.id.btn_right){
+            rulerView.left(1);
+        }else if (view.getId() == R.id.btn_left){
+            rulerView.left(-1);
         }
     }
 }

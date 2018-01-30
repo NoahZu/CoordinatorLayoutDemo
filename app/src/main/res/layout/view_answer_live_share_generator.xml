@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_avatar"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            fresco:roundAsCircle="true"
+            android:layout_marginTop="231dp"
+            fresco:failureImage="@drawable/avatar"
+            fresco:placeholderImage="@drawable/avatar"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="this is text"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="4dp"
+            android:textStyle="bold"
+            android:textColor="#fb3793"
+            android:textSize="24sp"
+            android:background="#44ff0000"
+            android:text="8888888"/>
+    </LinearLayout>
+</FrameLayout>

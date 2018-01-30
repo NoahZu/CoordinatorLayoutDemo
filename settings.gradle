@@ -1,1 +1,1 @@
-include ':app', ':uicomponent'
+include ':app', ':uicomponent', ':uirouter'

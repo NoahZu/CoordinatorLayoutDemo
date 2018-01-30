@@ -97,7 +97,7 @@ public class RulerView extends View {
     private void drawText(int position,Canvas canvas) {
         int distance = mCurrentStart + position * sSpan;
         if (position % 5 == 0){
-            canvas.drawText(position+"",distance - 22,230,mTextPaint);
+            canvas.drawText(position+"",position == 0 ? distance :distance - 12,180,mTextPaint);
         }
     }
 
@@ -107,9 +107,8 @@ public class RulerView extends View {
     private void drawScale(int position,Canvas canvas) {
         int distance = mCurrentStart + position * sSpan;
         Rect rect;
-        Log.d("==position",""+position);
         if (position % 5 == 0){
-            rect = new Rect(position == 0?distance : distance-3,0,distance + 3,160);
+            rect = new Rect(position == 0?distance : distance-3,0,distance + 3,120);
         }else {
             rect = new Rect(distance-2,0,distance + 2,80);
         }
@@ -118,10 +117,10 @@ public class RulerView extends View {
 
 
     public void left(int dis){
-        if (mCurrentStart + dis < 0 ){
+        if (mCurrentStart + dis * sSpan < 0 ){
             return;
         }
-        mCurrentStart += dis;
+        mCurrentStart += dis * sSpan;
 
         invalidate();
     }

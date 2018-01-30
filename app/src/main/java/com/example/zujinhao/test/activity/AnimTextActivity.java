@@ -12,7 +12,7 @@ import android.widget.ViewSwitcher;
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.widget.ChangeEditText;
 
-public class AnimTextActivity extends Activity {
+public class AnimTextActivity extends BaseActivity {
 
     private int current = 100;
     private TextSwitcher textSwitcher;

@@ -16,7 +16,7 @@ import com.example.zujinhao.test.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test6Activity extends AppCompatActivity implements View.OnClickListener {
+public class Test6Activity extends BaseActivity implements View.OnClickListener {
 
     // BottomSheetBehavior variable
     private BottomSheetBehavior bottomSheetBehavior;

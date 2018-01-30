@@ -7,17 +7,20 @@
     android:background="#fcfcfc"
     tools:context="com.example.zujinhao.test.activity.RulerActivity">
 
+
     <Button
-        android:id="@+id/btn_add"
+        android:id="@+id/btn_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="add"
+        android:text="左移"
         android:onClick="onClick"/>
+    
     <Button
-        android:id="@+id/btn_minus"
+        android:id="@+id/btn_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="minus"
+        android:text="右移"
+        android:layout_toRightOf="@id/btn_left"
         android:onClick="onClick"/>
 
 

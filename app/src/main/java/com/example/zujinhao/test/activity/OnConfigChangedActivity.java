@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.example.zujinhao.test.R;
 
-public class OnConfigChangedActivity extends Activity {
+public class OnConfigChangedActivity extends BaseActivity {
     private View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

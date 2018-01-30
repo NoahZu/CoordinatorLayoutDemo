@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.zujinhao.test.R;
 
-public class ConstraintLayoutActivity extends AppCompatActivity {
+public class ConstraintLayoutActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

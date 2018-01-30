@@ -11,7 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.adapter.HorRecyclerViewAdapter;
 
-public class RecyclerViewSnapHelperTestActivity extends AppCompatActivity {
+public class RecyclerViewSnapHelperTestActivity extends BaseActivity {
     private RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.example.zujinhao.test.other.AppbarLayoutForbidOpenBehavior;
 import com.example.zujinhao.test.R;
 
-public class Test2Activity extends AppCompatActivity {
+public class Test2Activity extends BaseActivity {
     private Toolbar toolbar;
     private WebView webView;
     private AppBarLayout appBarLayout;

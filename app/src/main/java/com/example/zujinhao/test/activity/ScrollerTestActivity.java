@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import com.example.zujinhao.test.R;
 
-public class ScrollerTestActivity extends AppCompatActivity {
+public class ScrollerTestActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
