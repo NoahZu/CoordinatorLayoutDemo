@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "27.0.1"
     defaultConfig {
         applicationId "com.example.zujinhao.test"
         minSdkVersion 15
@@ -35,4 +35,5 @@ dependencies {
     compile project(':uicomponent')
     compile 'com.alibaba.android:tangram:2.0.5@aar'
     compile 'com.facebook.fresco:fresco:1.7.1'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
 }

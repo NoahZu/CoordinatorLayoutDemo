@@ -28,5 +28,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:26.+'
     testCompile 'junit:junit:4.12'
+    //    compile 'io.github.noahzu:NoahZuLib:1.0.0'
     compile project(':uirouter')
 }

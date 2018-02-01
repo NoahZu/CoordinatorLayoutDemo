@@ -18,10 +18,8 @@ public class RulerActivity extends BaseActivity {
     }
 
     public void onClick(View view){
-        if (view.getId() == R.id.btn_right){
-            rulerView.left(1);
-        }else if (view.getId() == R.id.btn_left){
-            rulerView.left(-1);
+        if (view.getId() == R.id.btn_add){
+//            rulerView.left(1);
         }
     }
 }

@@ -4,12 +4,17 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
+import android.graphics.PointF;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 
+import com.example.zujinhao.test.other.UIToast;
 import com.example.zujinhao.test.utils.ScreenSizeUtils;
 
 /**
@@ -28,6 +33,10 @@ public class RulerView extends View {
     private Paint mScalePaint;//画笔
     private Paint mTextPaint;
     private Paint mCenterLinePaint;
+
+    private PointF lastPoint;
+    private float dragedLength;
+
 
 
 
@@ -60,7 +69,11 @@ public class RulerView extends View {
         mCenterLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mCenterLinePaint.setColor(sCenterLineColor);
 
+
+
     }
+
+
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -95,9 +108,10 @@ public class RulerView extends View {
     }
 
     private void drawText(int position,Canvas canvas) {
-        int distance = mCurrentStart + position * sSpan;
-        if (position % 5 == 0){
-            canvas.drawText(position+"",position == 0 ? distance :distance - 12,180,mTextPaint);
+        int distance = position * sSpan;
+        int scaleValue = position + mCurrentStart;
+        if (scaleValue % 5 == 0){
+            canvas.drawText(scaleValue+"",position == 0 ? distance :distance - 12,180,mTextPaint);
         }
     }
 
@@ -105,9 +119,11 @@ public class RulerView extends View {
      * 画刻度
      */
     private void drawScale(int position,Canvas canvas) {
-        int distance = mCurrentStart + position * sSpan;
+        int distance = position * sSpan;
+        int scaleValue = position + mCurrentStart;
+
         Rect rect;
-        if (position % 5 == 0){
+        if (scaleValue % 5 == 0){
             rect = new Rect(position == 0?distance : distance-3,0,distance + 3,120);
         }else {
             rect = new Rect(distance-2,0,distance + 2,80);
@@ -116,11 +132,34 @@ public class RulerView extends View {
     }
 
 
-    public void left(int dis){
-        if (mCurrentStart + dis * sSpan < 0 ){
-            return;
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                lastPoint = new PointF(event.getX(),getY());
+                break;
+            case MotionEvent.ACTION_MOVE:
+                dragedLength = event.getX() - lastPoint.x;
+                lastPoint.y = event.getX();
+                if (Math.abs(dragedLength) > 25){
+                    left((int) -dragedLength / 150);
+                    dragedLength = 0f;
+                }
+                break;
+            case MotionEvent.ACTION_UP:
+                lastPoint = null;
+                dragedLength = 0;
+                break;
         }
-        mCurrentStart += dis * sSpan;
+        return true;
+
+    }
+
+    public void left(int dis){
+        if (mCurrentStart + dis < 0){
+            return ;
+        }
+        mCurrentStart += dis;
 
         invalidate();
     }

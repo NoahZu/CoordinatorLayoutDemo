@@ -82,6 +82,9 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_record:
                 UIRouter.from(MainActivity.this).url("yizhibo://main/record").jump();
                 break;
+            case R.id.btn_okhttp:
+                UIRouter.from(MainActivity.this).url("yizhibo://main/okhttp").jump();
+                break;
 
         }
     }

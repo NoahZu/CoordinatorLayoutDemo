@@ -56,16 +56,29 @@
         <service android:name=".service.FloatingWindowService" />
 
         <activity android:name=".activity.RecordButtonActivity">
-            <intent-filter >
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="yizhibo"/>
-                <data android:host="main"/>
-                <data android:path="/record"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="yizhibo" />
+                <data android:host="main" />
+                <data android:path="/record" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.OkHttpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="yizhibo" />
+                <data android:host="main" />
+                <data android:path="/okhttp" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
