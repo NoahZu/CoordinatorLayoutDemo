@@ -7,10 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.fragment.BindPhoneDialogFragment;
 import com.example.zujinhao.test.other.UIToast;
+import com.example.zujinhao.test.test.Test;
 
 import component.noahzu.github.io.uirouter.UIRouter;
 
@@ -84,6 +86,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_okhttp:
                 UIRouter.from(MainActivity.this).url("yizhibo://main/okhttp").jump();
+                break;
+            case R.id.btn_native:
+                UIToast.show(this, Test.getString());
                 break;
 
         }
