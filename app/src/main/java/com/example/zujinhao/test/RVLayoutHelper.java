@@ -49,7 +49,9 @@ public class RVLayoutHelper {
     public View getCurrentView(){
         return mLayoutManager.findViewByPosition(mCurrentPosition);
     }
-
+    public LinearLayoutManager getLayoutManager(){
+        return mLayoutManager;
+    }
 
     public void setOnPageChangeListener(OnPageChangeListener onPageChangeListener){
         this.mOnPageChangeListener = onPageChangeListener;

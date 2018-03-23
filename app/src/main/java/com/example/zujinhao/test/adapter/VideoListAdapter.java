@@ -54,6 +54,10 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
         public void set(){
 
         }
+
+        public View getItemView(){
+            return itemView;
+        }
     }
 
     public void add(String bean){

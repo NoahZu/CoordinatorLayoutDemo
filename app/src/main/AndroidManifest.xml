@@ -86,7 +86,8 @@
             android:process=":test" />
 
         <activity android:name=".activity.AidlActivity" />
-        <activity android:name=".activity.VideoListActivity"></activity>
+        <activity android:name=".activity.VideoListActivity" />
+        <activity android:name=".activity.VideoPlayActivity"></activity>
     </application>
 
 </manifest>

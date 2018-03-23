@@ -6,6 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.VideoView;
 
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.RVLayoutHelper;
@@ -18,6 +21,8 @@ public class VideoListActivity extends AppCompatActivity {
 
     private RVLayoutHelper mRVLayoutHelper;
     private PagerSnapHelper mPagerSnapHelper;
+
+    private VideoView viewView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,18 +39,22 @@ public class VideoListActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
 
-        mRVLayoutHelper.setOnPageChangeListener(new RVLayoutHelper.OnPageChangeListener() {
-            @Override
-            public void onPageChanged(int oldPosition, int position) {
-                System.out.println("当前是页码："+position);
-            }
-        });
+
 
         mPagerSnapHelper = new PagerSnapHelper();
         mRVLayoutHelper = new RVLayoutHelper();
 
+        mRVLayoutHelper.setOnPageChangeListener(new RVLayoutHelper.OnPageChangeListener() {
+            @Override
+            public void onPageChanged(int oldPosition, int position) {
+                System.out.println("===position:oldPosition:"+oldPosition+",newPosition:"+position);
+            }
+        });
+
         mPagerSnapHelper.attachToRecyclerView(mRecyclerView);
         mRVLayoutHelper.attachToRecyclerView(mRecyclerView);
+
+
 
     }
 }
