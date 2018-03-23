@@ -90,6 +90,15 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_native:
                 UIToast.show(this, Test.getString());
                 break;
+            case R.id.btn_rx:
+                startActivity(new Intent(MainActivity.this,RxJavaActivity.class));
+                break;
+            case R.id.btn_aidl:
+                startActivity(new Intent(MainActivity.this,AidlActivity.class));
+                break;
+            case R.id.btn_video_list:
+                startActivity(new Intent(MainActivity.this,VideoListActivity.class));
+                break;
 
         }
     }

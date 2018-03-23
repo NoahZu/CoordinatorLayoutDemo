@@ -79,6 +79,14 @@
                 <data android:path="/okhttp" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.RxJavaActivity" />
+
+        <service
+            android:name=".service.SingleProcessServices"
+            android:process=":test" />
+
+        <activity android:name=".activity.AidlActivity" />
+        <activity android:name=".activity.VideoListActivity"></activity>
     </application>
 
 </manifest>

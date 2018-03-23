@@ -12,7 +12,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         ndk {
-            moduleName"myNativeLib"
+            moduleName "myNativeLib"
             ldLibs "log", "z", "m"
             abiFilters "armeabi", "armeabi-v7a", "x86"
         }
@@ -42,4 +42,5 @@ dependencies {
     compile 'com.alibaba.android:tangram:2.0.5@aar'
     compile 'com.facebook.fresco:fresco:1.7.1'
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.github.dueeeke:dkplayer:1.4.3'
 }
