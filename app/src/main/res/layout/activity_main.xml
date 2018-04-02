@@ -85,6 +85,14 @@
                     android:onClick="onClick"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"/>
+                <Button
+                    android:id="@+id/btn_bottom_sheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BottSheet"
+                    android:textAllCaps="false"
+                    android:onClick="onClick"
+                    android:layout_marginRight="10dp"/>
 
             </GridLayout>
 

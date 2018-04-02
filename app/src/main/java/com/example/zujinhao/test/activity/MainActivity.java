@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.fragment.BindPhoneDialogFragment;
+import com.example.zujinhao.test.fragment.DialogSheetFragment;
 import com.example.zujinhao.test.other.UIToast;
 import com.example.zujinhao.test.test.Test;
 
@@ -44,6 +45,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_6:
                 startActivity(new Intent(MainActivity.this,Test6Activity.class));
+                break;
+            case R.id.btn_bottom_sheet:
+                showBottomSheet();
                 break;
             case R.id.btn_8:
                 startActivity(new Intent(MainActivity.this,Test7Activity.class));
@@ -101,5 +105,11 @@ public class MainActivity extends BaseActivity {
                 break;
 
         }
+    }
+
+    private void showBottomSheet() {
+        DialogSheetFragment dialogSheetFragment = new DialogSheetFragment();
+        dialogSheetFragment.show(getSupportFragmentManager(),"Music");
+
     }
 }
