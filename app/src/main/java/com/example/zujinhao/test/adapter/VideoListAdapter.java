@@ -1,14 +1,20 @@
 package com.example.zujinhao.test.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.RVLayoutHelper;
+import com.example.zujinhao.test.bean.VideoBean;
+import com.example.zujinhao.test.widget.PlayerView;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +24,14 @@ import java.util.List;
  */
 
 public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.VideoViewHolder> {
-    private List<String> mData;
+    private List<VideoBean> mData;
     private Context mContext;
 
 
 
     public VideoListAdapter(Context context){
         mContext = context;
-        mData = new ArrayList<String>();
+        mData = new ArrayList<VideoBean>();
     }
 
     @Override
@@ -35,7 +41,8 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
 
     @Override
     public void onBindViewHolder(VideoViewHolder holder, int position) {
-
+        holder.setData(mData.get(position));
+        holder.play(mData.get(position));
     }
 
 
@@ -46,22 +53,38 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
     }
 
     public class VideoViewHolder extends RecyclerView.ViewHolder{
+        private TextView title;
+        private SimpleDraweeView author;
+        private PlayerView playerView;
 
-        public VideoViewHolder(View itemView) {
+        VideoViewHolder(View itemView) {
             super(itemView);
+            title = itemView.findViewById(R.id.tv_title);
+            author = itemView.findViewById(R.id.iv_avater);
+            playerView = itemView.findViewById(R.id.player_view);
         }
 
-        public void set(){
-
+        public void setData(VideoBean data){
+            title.setText(data.getVideoTitle());
+            author.setImageURI(data.getAuthor());
+            playerView.setCover(data.getVideoCover());
         }
 
-        public View getItemView(){
-            return itemView;
+        public void play(VideoBean videoBean){
+            playerView.startPlay(videoBean);
         }
     }
 
-    public void add(String bean){
+    public void add(VideoBean bean){
         mData.add(bean);
+    }
+
+
+    public VideoBean getData(int position){
+        if (mData == null || mData.size() == 0){
+            return null;
+        }
+        return mData.get(position);
     }
 
 }
