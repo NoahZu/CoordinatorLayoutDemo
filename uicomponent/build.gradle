@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
@@ -30,4 +31,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     //    compile 'io.github.noahzu:NoahZuLib:1.0.0'
     compile project(':uirouter')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

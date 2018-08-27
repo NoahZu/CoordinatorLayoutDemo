@@ -1,53 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <View
+
+    <com.example.zujinhao.test.widget.PlayerView
+        android:id="@+id/player_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#44444444"
-        android:layout_margin="15dp"/>
-    <LinearLayout
-        android:id="@+id/video_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent"/>
 
-    </LinearLayout>
-
-    <Button
+    <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="分享"
+        android:text="这是标题"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
     />
     <Button
+        android:id="@+id/btn_share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="分享"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="20dp"
-    /><Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="分享"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="90dp"
-    /><Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="分享"
+    />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_avater"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="180dp"
+        app:roundAsCircle="true"
+        android:layout_marginLeft="20dp"
     />
-
-    
-
-
 
 </RelativeLayout>
