@@ -326,6 +326,43 @@
 
         </LinearLayout>
 
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="常见布局："
+                android:layout_marginLeft="15dp"
+                />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                >
+
+                <Button
+                    android:id="@+id/vertical_muti_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="竖排列表"
+                    android:textAllCaps="false"
+                    android:onClick="onClick"
+                    android:layout_marginRight="10dp"/>
+
+            </GridLayout>
+
+
+
+        </LinearLayout>
+
     </LinearLayout>
 
 

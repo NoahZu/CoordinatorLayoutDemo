@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        tools:text="随手拍张照"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageIcon"
+        android:layout_marginLeft="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

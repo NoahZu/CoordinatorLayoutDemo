@@ -1,3 +1,210 @@
 <resources>
     <string name="app_name">我的练手</string>
+
+
+
+
+    <string name="test_json">
+        [
+    {
+        "id": 1,
+        "content": [
+            {
+                "title": "dd"
+            },
+            {
+                "title": "好久不见"
+            },
+            {
+                "title": "好久不见"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "好久不见"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "好久不见"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "好久不见"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "山竹啊啊啊"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "content": [
+            {
+                "title": "11"
+            },
+            {
+                "title": "22"
+            },
+            {
+                "title": "22"
+            },
+            {
+                "title": "33"
+            },
+            {
+                "title": "33"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "content": [
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "content": [
+            {
+                "title": "aa"
+            },
+            {
+                "title": "bb"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "cc"
+            },
+            {
+                "title": "aa"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "content": [
+            {
+                "title": "bb"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "dd"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "11"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "content": [
+            {
+                "title": "11"
+            },
+            {
+                "title": "ff"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "ff"
+            },
+            {
+                "title": "gg"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "content": [
+            {
+                "title": "一觉醒来"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "content": [
+            {
+                "title": "撸猫"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            },
+            {
+                "title": "aa"
+            }
+        ]
+    }
+]
+    </string>
 </resources>

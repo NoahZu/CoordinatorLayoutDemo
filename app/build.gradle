@@ -44,7 +44,11 @@ dependencies {
     compile 'com.facebook.fresco:fresco:1.7.1'
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile 'org.jetbrains.anko:anko-commons:0.10.1'
+    compile 'com.google.code.gson:gson:2.8.5'
 }
 repositories {
     mavenCentral()
 }
+
+apply plugin: 'kotlin-android-extensions'

@@ -103,6 +103,9 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_video_list:
                 startActivity(new Intent(MainActivity.this,VideoListActivity.class));
                 break;
+            case R.id.vertical_muti_list:
+                startActivity(new Intent(MainActivity.this,VerticalMutiListActivity.class));
+                break;
 
         }
     }
