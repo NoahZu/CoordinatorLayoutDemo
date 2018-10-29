@@ -89,8 +89,8 @@
         <activity android:name=".activity.VideoListActivity" />
         <activity android:name=".activity.VideoPlayActivity" />
         <activity android:name=".activity.VerticalMutiListActivity" />
-        <activity android:name=".activity.JsonActivity">
-        </activity>
+        <activity android:name=".activity.JsonActivity"></activity>
+        <activity android:name=".activity.AopActivity"></activity>
     </application>
 
 </manifest>

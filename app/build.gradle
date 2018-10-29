@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'android-aspectjx'
 
 android {
     compileSdkVersion 26
@@ -40,12 +41,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'io.reactivex.rxjava2:rxjava:2.1.7'
     compile project(':uicomponent')
-    compile 'com.alibaba.android:tangram:2.0.5@aar'
     compile 'com.facebook.fresco:fresco:1.7.1'
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     compile 'org.jetbrains.anko:anko-commons:0.10.1'
     compile 'com.google.code.gson:gson:2.8.5'
+    compile 'org.aspectj:aspectjrt:1.8.9'
+
 }
 repositories {
     mavenCentral()
