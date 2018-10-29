@@ -84,6 +84,7 @@ class VerticalMutiListActivity : AppCompatActivity() {
             radioButton.gravity = Gravity.CENTER
 
 
+
             val layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, UIUtils.dip2px(this, 50f))
 
             leftMenu.addView(radioButton, layoutParams)
