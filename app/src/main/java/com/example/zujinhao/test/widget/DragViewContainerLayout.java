@@ -70,6 +70,16 @@ public class DragViewContainerLayout extends LinearLayout {
             super.onViewDragStateChanged(state);
 
         }
+
+        @Override
+        public int getViewHorizontalDragRange(View child) {
+            return 1;
+        }
+
+        @Override
+        public int getViewVerticalDragRange(View child) {
+            return 1;
+        }
     }
 
     @Override

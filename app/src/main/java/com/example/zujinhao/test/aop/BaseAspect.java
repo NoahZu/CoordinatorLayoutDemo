@@ -20,20 +20,20 @@ public class BaseAspect {
     private static final String TAG = "基础用法测试";
 
 
-    @Before("execution(* com.example.zujinhao.test.activity.AopActivity.testBeforeAndAfter(..))")
+    @Before("execution(* com.example.zujinhao.test.aop.AopActivity.testBeforeAndAfter(..))")
     public void activityOnMethodBefore(JoinPoint joinPoint){
         String key = joinPoint.getSignature().toString();
         Log.d(TAG,"activityOnMethodBefore:调用方法路径"+key);
     }
 
 
-    @After("execution(* com.example.zujinhao.test.activity.AopActivity.testBeforeAndAfter(..))")
+    @After("execution(* com.example.zujinhao.test.aop.AopActivity.testBeforeAndAfter(..))")
     public void activityOnMethodAfter(JoinPoint joinPoint){
         String key = joinPoint.getSignature().toString();
         Log.d(TAG,"activityOnMethodAfter:调用方法路径"+key);
     }
 
-    @Around("execution(* com.example.zujinhao.test.activity.AopActivity.testAround(..))")
+    @Around("execution(* com.example.zujinhao.test.aop.AopActivity.testAround(..))")
     public void activityOnMethodAround(ProceedingJoinPoint joinPoint) throws Throwable {
         String key = joinPoint.getSignature().toString();
 

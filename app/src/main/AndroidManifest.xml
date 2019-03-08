@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zujinhao.test">
-
     <!-- 显示顶层浮窗 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.XhsTextActivity"></activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -89,8 +89,8 @@
         <activity android:name=".activity.VideoListActivity" />
         <activity android:name=".activity.VideoPlayActivity" />
         <activity android:name=".activity.VerticalMutiListActivity" />
-        <activity android:name=".activity.JsonActivity"></activity>
-        <activity android:name=".activity.AopActivity"></activity>
+        <activity android:name=".activity.JsonActivity" />
+        <activity android:name=".aop.AopActivity" />
     </application>
 
 </manifest>

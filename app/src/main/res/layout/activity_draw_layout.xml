@@ -7,9 +7,11 @@
     tools:context="com.example.zujinhao.test.activity.DrawLayoutActivity">
 
     <View
+        android:id="@+id/redView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="#ff0000"/>
+        android:background="#ff0000"
+        android:clickable="true"/>
 
     <View
         android:layout_width="100dp"

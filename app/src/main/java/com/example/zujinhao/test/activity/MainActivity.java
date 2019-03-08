@@ -1,16 +1,11 @@
 package com.example.zujinhao.test.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.example.zujinhao.test.R;
-import com.example.zujinhao.test.fragment.BindPhoneDialogFragment;
+import com.example.zujinhao.test.aop.AopActivity;
 import com.example.zujinhao.test.fragment.DialogSheetFragment;
 import com.example.zujinhao.test.other.UIToast;
 import com.example.zujinhao.test.test.Test;
@@ -108,6 +103,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.vertical_muti_list:
                 startActivity(new Intent(MainActivity.this,VerticalMutiListActivity.class));
+                break;
+            case R.id.xhsText:
+                startActivity(new Intent(MainActivity.this,XhsTextActivity.class));
                 break;
 
         }
