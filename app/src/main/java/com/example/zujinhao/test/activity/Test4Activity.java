@@ -1,16 +1,16 @@
 package com.example.zujinhao.test.activity;
 
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.example.zujinhao.test.widget.MyViewHolder;
 import com.example.zujinhao.test.R;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public class Test4Activity extends BaseActivity {
     private RecyclerView recyclerView;

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Test.iml" filepath="$PROJECT_DIR$/Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/uicomponent/uicomponent.iml" filepath="$PROJECT_DIR$/uicomponent/uicomponent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/uirouter/uirouter.iml" filepath="$PROJECT_DIR$/uirouter/uirouter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TestDemo.iml" filepath="$PROJECT_DIR$/.idea/TestDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TestDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TestDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uicomponent/TestDemo.uicomponent.iml" filepath="$PROJECT_DIR$/.idea/modules/uicomponent/TestDemo.uicomponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uirouter/TestDemo.uirouter.iml" filepath="$PROJECT_DIR$/.idea/modules/uirouter/TestDemo.uirouter.iml" />
     </modules>
   </component>
 </project>

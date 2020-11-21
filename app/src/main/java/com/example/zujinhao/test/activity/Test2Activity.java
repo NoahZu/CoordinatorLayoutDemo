@@ -1,11 +1,9 @@
 package com.example.zujinhao.test.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
@@ -13,6 +11,8 @@ import android.widget.TextView;
 
 import com.example.zujinhao.test.other.AppbarLayoutForbidOpenBehavior;
 import com.example.zujinhao.test.R;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public class Test2Activity extends BaseActivity {
     private Toolbar toolbar;

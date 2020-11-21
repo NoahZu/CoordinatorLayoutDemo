@@ -1,8 +1,9 @@
 package com.example.zujinhao.test.other;
 
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CoordinatorLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.view.View;
+
+import com.google.android.material.appbar.AppBarLayout;
 
 /**
  * Created by zujinhao on 2017/8/17.

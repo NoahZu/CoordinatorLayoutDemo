@@ -1,10 +1,9 @@
 package com.example.zujinhao.test.activity;
 
 import android.graphics.Bitmap;
-import android.media.Image;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;

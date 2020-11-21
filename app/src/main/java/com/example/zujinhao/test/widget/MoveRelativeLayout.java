@@ -1,13 +1,10 @@
 package com.example.zujinhao.test.widget;
 
 import android.content.Context;
-import android.support.annotation.IntDef;
-import android.support.v4.view.ViewConfigurationCompat;
+import androidx.annotation.IntDef;
+import androidx.core.view.ViewConfigurationCompat;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewConfiguration;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
 
