@@ -1,14 +1,13 @@
 package com.example.zujinhao.test.adapter;
 
 import android.content.Context;
-import android.net.Uri;
-import android.support.v7.widget.PagerSnapHelper;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.VideoView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.zujinhao.test.R;
 import com.example.zujinhao.test.RVLayoutHelper;

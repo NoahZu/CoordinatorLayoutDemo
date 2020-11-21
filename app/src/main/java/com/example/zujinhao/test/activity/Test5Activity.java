@@ -2,10 +2,10 @@ package com.example.zujinhao.test.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 
 import com.example.zujinhao.test.R;
+import com.google.android.material.snackbar.Snackbar;
 
 public class Test5Activity extends BaseActivity {
 

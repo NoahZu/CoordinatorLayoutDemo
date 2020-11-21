@@ -1,6 +1,6 @@
 package com.example.zujinhao.test.fragment.liveRoom;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by zujinhao on 2017/9/5.

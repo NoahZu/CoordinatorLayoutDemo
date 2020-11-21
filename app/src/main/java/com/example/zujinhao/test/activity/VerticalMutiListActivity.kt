@@ -3,15 +3,14 @@ package com.example.zujinhao.test.activity
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.annotation.RequiresApi
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.OrientationHelper
 import android.view.Gravity
 import android.widget.LinearLayout
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.OrientationHelper
 import com.example.zujinhao.test.R
 import com.example.zujinhao.test.bean.Topic
 import com.example.zujinhao.test.bean.TopicGroup
@@ -26,8 +25,6 @@ class VerticalMutiListActivity : AppCompatActivity() {
     private var mCurrentId = -1
     private val topicGroupList : ArrayList<TopicGroup>
     private val topicAdapter = TopicGroupListAdapter(this)
-
-
 
     init {
         val type = object : TypeToken<ArrayList<TopicGroup>>(){}.type
@@ -59,7 +56,7 @@ class VerticalMutiListActivity : AppCompatActivity() {
     }
 
     private fun initRightContent() {
-        rightContent.layoutManager = LinearLayoutManager(this, OrientationHelper.VERTICAL,false)
+        rightContent.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
         rightContent.adapter = topicAdapter
     }
 

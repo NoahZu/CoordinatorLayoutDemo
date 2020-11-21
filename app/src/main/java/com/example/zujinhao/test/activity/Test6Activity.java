@@ -1,10 +1,9 @@
 package com.example.zujinhao.test.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.zujinhao.test.fragment.CustomBottomSheetDialogFragment;
 import com.example.zujinhao.test.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.util.ArrayList;
 import java.util.List;

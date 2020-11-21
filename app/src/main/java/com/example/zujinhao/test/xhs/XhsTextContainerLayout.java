@@ -2,12 +2,13 @@ package com.example.zujinhao.test.xhs;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import androidx.annotation.Nullable;
+import androidx.customview.widget.ViewDragHelper;
 
 import java.util.HashMap;
 import java.util.Map;

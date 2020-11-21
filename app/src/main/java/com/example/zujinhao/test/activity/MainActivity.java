@@ -1,12 +1,12 @@
 package com.example.zujinhao.test.activity;
 
 import android.content.Intent;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.zujinhao.test.R;
-import com.example.zujinhao.test.aop.AopActivity;
-import com.example.zujinhao.test.fragment.DialogSheetFragment;
 import com.example.zujinhao.test.other.UIToast;
 import com.example.zujinhao.test.test.Test;
 
@@ -40,9 +40,6 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_6:
                 startActivity(new Intent(MainActivity.this,Test6Activity.class));
-                break;
-            case R.id.btn_bottom_sheet:
-                showBottomSheet();
                 break;
             case R.id.btn_8:
                 startActivity(new Intent(MainActivity.this,Test7Activity.class));
@@ -86,9 +83,6 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_okhttp:
                 UIRouter.from(MainActivity.this).url("yizhibo://main/okhttp").jump();
                 break;
-            case R.id.btn_native:
-                UIToast.show(this, Test.getString());
-                break;
             case R.id.btn_rx:
                 startActivity(new Intent(MainActivity.this,RxJavaActivity.class));
                 break;
@@ -98,22 +92,7 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_video_list:
                 startActivity(new Intent(MainActivity.this,VideoListActivity.class));
                 break;
-            case R.id.btn_aop:
-                startActivity(new Intent(MainActivity.this,AopActivity.class));
-                break;
-            case R.id.vertical_muti_list:
-                startActivity(new Intent(MainActivity.this,VerticalMutiListActivity.class));
-                break;
-            case R.id.xhsText:
-                startActivity(new Intent(MainActivity.this,XhsTextActivity.class));
-                break;
 
         }
-    }
-
-    private void showBottomSheet() {
-        DialogSheetFragment dialogSheetFragment = new DialogSheetFragment();
-        dialogSheetFragment.show(getSupportFragmentManager(),"Music");
-
     }
 }

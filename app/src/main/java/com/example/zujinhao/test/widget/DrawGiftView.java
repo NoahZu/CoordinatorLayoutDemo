@@ -6,16 +6,14 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Point;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.example.zujinhao.test.R;
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 
 /**
  * Created by zujinhao on 2017/8/21.

@@ -1,11 +1,11 @@
 package com.example.zujinhao.test.bean
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.example.zujinhao.test.R
 import java.util.ArrayList
 
@@ -20,17 +20,15 @@ class TopicGroupListAdapter(val context:Context) : RecyclerView.Adapter<TopicVie
     private var currentId : Int? = 0
     private var targetData = ArrayList<Topic>()
 
-
-
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): TopicViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopicViewHolder {
         return TopicViewHolder(LayoutInflater.from(context).inflate(R.layout.item_topic,parent,false))
     }
 
-    override fun getItemCount(): Int = targetData.size
-
-    override fun onBindViewHolder(holder: TopicViewHolder?, position: Int) {
+    override fun onBindViewHolder(holder: TopicViewHolder, position: Int) {
         holder?.setTitle(targetData[position].title)
     }
+
+    override fun getItemCount(): Int = targetData.size
 
     fun setData(arrayData : Collection<TopicGroup>){
         data.clear()

@@ -1,6 +1,6 @@
 package com.example.zujinhao.test.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,19 +9,12 @@ import android.widget.TextView;
 import com.example.zujinhao.test.R;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import okhttp3.internal.http.HttpCodec;
-import okhttp3.internal.http.RealInterceptorChain;
 
 public class OkHttpActivity extends BaseActivity {
 

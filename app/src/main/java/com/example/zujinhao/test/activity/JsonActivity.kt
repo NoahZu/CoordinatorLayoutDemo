@@ -1,7 +1,7 @@
 package com.example.zujinhao.test.activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.zujinhao.test.R
 import com.example.zujinhao.test.bean.TestBean
 import com.google.gson.Gson

@@ -4,12 +4,9 @@ package com.example.zujinhao.test.widget;
 import android.animation.Animator;
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.widget.AppCompatEditText;
-import android.text.Editable;
-import android.text.TextWatcher;
+import androidx.appcompat.widget.AppCompatEditText;
+
 import android.util.AttributeSet;
-import android.widget.EditText;
-import android.widget.TextView;
 
 /**
  * Created by zujinhao on 2017/10/30.
