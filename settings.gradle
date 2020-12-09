@@ -1,1 +1,2 @@
+include ':luajlib'
 include ':app', ':uicomponent', ':uirouter'
