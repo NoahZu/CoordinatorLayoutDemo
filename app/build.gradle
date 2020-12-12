@@ -31,6 +31,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation project(path: ':luajlib')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -45,4 +46,5 @@ dependencies {
     implementation 'com.facebook.fresco:fresco:1.7.1'
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
     implementation 'com.xfy.luajava:luac:0.7'
+    implementation project(path: ':flutter')
 }

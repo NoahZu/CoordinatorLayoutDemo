@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.zujinhao.test.R;
+import com.example.zujinhao.test.flutter.TestFlutterActivity;
 import com.example.zujinhao.test.other.UIToast;
 import com.example.zujinhao.test.test.Test;
 
@@ -92,7 +93,9 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_video_list:
                 startActivity(new Intent(MainActivity.this,VideoListActivity.class));
                 break;
-
+            case R.id.btn_flutter:
+                startActivity(new Intent(MainActivity.this, TestFlutterActivity.class));
+                break;
         }
     }
 }
