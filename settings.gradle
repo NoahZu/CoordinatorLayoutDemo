@@ -1,10 +1,10 @@
 include ':luajlib'
 include ':app', ':uicomponent', ':uirouter'
-setBinding(new Binding([gradle:this]))
-evaluate(
-        new File(
-                settingsDir,
-                'uiflutter/.android/include_flutter.groovy'
-        )
-)
-include ':uiflutter'
+//setBinding(new Binding([gradle:this]))
+//evaluate(
+//        new File(
+//                settingsDir,
+//                'uiflutter/.android/include_flutter.groovy'
+//        )
+//)
+//include ':uiflutter'
