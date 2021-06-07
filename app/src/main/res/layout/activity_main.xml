@@ -159,6 +159,15 @@
                 android:textAllCaps="false"
                 android:onClick="onClick"/>
 
+            <Button
+                android:id="@+id/sysViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统控件"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:layout_marginStart="10dp"/>
+
         </GridLayout>
 
 
@@ -324,6 +333,14 @@
                     android:layout_height="wrap_content"
                     android:text="Flutter"
                     android:layout_marginLeft="10dp"
+                    android:textAllCaps="false"
+                    android:onClick="onClick"/>
+
+                <Button
+                    android:id="@+id/btn_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="exoplayer"
                     android:textAllCaps="false"
                     android:onClick="onClick"/>
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SystemViewsActivity">
+
+    <!--https://mp.weixin.qq.com/s/z3FkJHTSkH_TFis_VOdkSw-->
+
+    <GridLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btn_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/avatar"
+            app:shapeAppearance="@style/RoundedStyle"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btn_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toEndOf="@id/btn_1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/avatar"
+            app:shapeAppearance="@style/CircleStyle"
+            app:strokeColor="#FF0000"
+            app:strokeWidth="5dp"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btn_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/avatar"
+            app:shapeAppearance="@style/CutStyle"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btn_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/avatar"
+            app:shapeAppearance="@style/CutStyle"
+            app:strokeColor="#FF0000"
+            app:strokeWidth="10dp"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btn_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/avatar"
+            app:shapeAppearance="@style/CircleStyle"
+            />
+
+    </GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

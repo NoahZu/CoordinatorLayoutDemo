@@ -89,6 +89,12 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_video_list:
                 startActivity(new Intent(MainActivity.this,VideoListActivity.class));
                 break;
+            case R.id.btn_player:
+                startActivity(new Intent(MainActivity.this,VideoListActivity.class));
+                break;
+            case R.id.sysViews :
+                startActivity(new Intent(MainActivity.this,SystemViewsActivity.class));
+                break;
         }
     }
 }
